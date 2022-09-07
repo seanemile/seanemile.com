@@ -18,7 +18,7 @@ import { provideAnalytics,getAnalytics,ScreenTrackingService,UserTrackingService
     provideAnalytics(() => getAnalytics())
   ],
   providers: [
-    ScreenTrackingService,UserTrackingService
+   // ScreenTrackingService,UserTrackingService
   ],
   bootstrap: [AppComponent]
 })
