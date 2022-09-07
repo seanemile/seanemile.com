@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ethereum-university": {
+      "hosting": {
+        "seanemile.com": [
+          "seanemile"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ethereum-university"
+  }
+}
