@@ -14,6 +14,7 @@ import { DonateComponent } from './donate/donate.component';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAnalytics,getAnalytics,ScreenTrackingService} from '@angular/fire/analytics';
+import { MaterialModule } from './shared/material.module';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { provideAnalytics,getAnalytics,ScreenTrackingService} from '@angular/fir
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MaterialModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAnalytics(() => getAnalytics()),
     BrowserAnimationsModule,
