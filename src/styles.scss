@@ -31,19 +31,19 @@ $dark-theme: mat.define-dark-theme((
 ));
 
 // Apply the dark theme by default
-@include mat.all-component-themes($dark-theme);
+@include mat.all-component-themes($light-theme);
 
 // Apply strong focus indicator by default
-@include mat.strong-focus-indicators-theme($dark-theme);
+@include mat.strong-focus-indicators-theme($light-theme);
 
 // Apply the light theme only when the `.my-light-theme` CSS class is applied
 // to an ancestor element of the components (such as `body`).
-.light-theme {
+.dark-theme {
 // This mixin only generates the color styles now.
-@include mat.all-component-colors($light-theme);
+@include mat.all-component-colors($dark-theme);
 
 // Apply strong focus indicator
-@include mat.strong-focus-indicators-theme($light-theme);
+@include mat.strong-focus-indicators-color($dark-theme);
 
 }
 
