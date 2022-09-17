@@ -20,7 +20,17 @@
   text-align: left;
 }
 
-.example-header-image {
+.profile-header-image {
   background-image: url('../../assets/img/components/Profile.jpg');
+  background-size: cover;
+}
+
+.article1-header-image {
+  background-image: url('../../assets/img/components/c4-logo.svg');
+  background-size: cover;
+}
+
+.article2-header-image {
+  background-image: url('../../assets/img/components/uniswap-hero.png');
   background-size: cover;
 }
