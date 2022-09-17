@@ -17,6 +17,13 @@
   right: 0;
   z-index: 2;
 }
-button {
-  text-transform: uppercase;
+
+.github {
+  position: absolute;
+  right: 16px;
+}
+
+.formatColorFill{
+  position: absolute;
+  right: 56px;
 }

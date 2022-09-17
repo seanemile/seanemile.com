@@ -1,0 +1,103 @@
+<div class="grid-container">
+  <mat-grid-list cols="3" rowHeight="300px">
+    <mat-grid-tile colspan="2" rowspan="1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            Profile
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div>Card Content Here</div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>Socials</mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <a mat-icon-button color="primary">
+            <img src="../../assets/github.svg" alt="Github Image">
+            <span>&nbsp;&nbsp;Github</span>
+          </a>
+          <br>
+          <a mat-icon-button color="primary">
+            <img src="../../assets/twitter.svg" alt="Twitter Image">
+            <span>&nbsp;&nbsp;Twitter</span>
+          </a>
+          <br>
+          <a mat-icon-button color="primary">
+            <img src="../../assets/discord.svg" alt="Discord Image">
+            <span>&nbsp;&nbsp;Discord</span>
+          </a>
+          <br>
+          <a mat-icon-button color="primary">
+            <img color="primary" src="../../assets/telegram.svg" alt="Telegram Image">
+            <span>&nbsp;&nbsp;Telegram</span>
+          </a>
+          <br>
+          <a mat-icon-button color="primary">
+            <img src="../../assets/ethereum.svg" alt="Ethereum Image">
+            <span>&nbsp;&nbsp;Ethereum</span>
+          </a>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="2" rowspan="1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            Article 1
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <a href="#" routerLink="socials" mat-menu-item> Expand</a>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div>Card Content Here</div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="2">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            Projects
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <a routerLink="projects"><button mat-menu-item>Expand</button></a>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div>Card Content Here</div>
+        </mat-card-content>
+      </mat-card>
+      </mat-grid-tile>
+    <mat-grid-tile colspan="2" rowspan="1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            Article 2
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <a href="#" routerLink="socials" mat-menu-item> Expand</a>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div>Card Content Here</div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

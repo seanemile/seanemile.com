@@ -10,6 +10,10 @@
   bottom: 15px;
 }
 
+mat-card {
+  max-width: 200px;
+}
+
 .more-button {
   position: absolute;
   top: 5px;
@@ -19,3 +23,8 @@
 .dashboard-card-content {
   text-align: center;
 }
+
+mat-card-title {
+  text-align: center;
+}
+
