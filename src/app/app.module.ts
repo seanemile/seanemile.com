@@ -5,7 +5,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Project Components
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { DonateComponent } from './donate/donate.component';
@@ -15,14 +14,15 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAnalytics,getAnalytics,ScreenTrackingService} from '@angular/fire/analytics';
 import { MaterialModule } from './shared/material.module';
+import { NavigationsComponent } from './navigations/navigations.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     ArticlesComponent,
     ContactsComponent,
-    DonateComponent
+    DonateComponent,
+    NavigationsComponent,
   ],
   imports: [
     BrowserModule,
