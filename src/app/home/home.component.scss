@@ -1,28 +1,30 @@
 .grid-container {
-  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: minmax(100px auto);
+  gap: 1em 1em;
+  margin: 1em;
+
 }
 
-.dashboard-card {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
+.grid-container-profile{
+  grid-column: 1 / 4;
 }
 
-.more-button {
-  position: absolute;
-  top: 5px;
-  right: 10px;
+.grid-container-article1 {
+  grid-column: 1 / 4;
 }
 
-.dashboard-card-content {
-  text-align: left;
+.grid-container-article2 {
+  grid-column: 1 / 4;
 }
 
-.profile-header-image {
-  background-image: url('../../assets/img/components/Profile.jpg');
-  background-size: cover;
+.grid-container-socials {
+  grid-column: 1 / 2;
+}
+
+.grid-container-projects {
+  grid-column: 2 / 4;
 }
 
 .article1-header-image {
@@ -33,4 +35,17 @@
 .article2-header-image {
   background-image: url('../../assets/img/components/uniswap-hero.png');
   background-size: cover;
+}
+
+.profile-header-image {
+  background-image: url('../../assets/img/components/Profile.jpg');
+  background-size: cover;
+}
+
+.dashboard-card-content {
+  text-align: left;
+}
+
+.dashboard-card-content {
+  text-align: left;
 }
