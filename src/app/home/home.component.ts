@@ -9,25 +9,42 @@ import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 })
 export class HomeComponent {
   /** Based on the screen size, switch from standard to one column per row */
-  cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
-    map(({ matches }) => {
-      if (matches) {
-        return [
-          { title: 'Card 1', cols: 1, rows: 1 },
-          { title: 'Card 2', cols: 1, rows: 1 },
-          { title: 'Card 3', cols: 1, rows: 1 },
-          { title: 'Card 4', cols: 1, rows: 1 }
-        ];
-      }
+  profileColumSize = 2;
+  profileRowSize = 2;
 
-      return [
-        { title: 'Card 1', cols: 2, rows: 1 },
-        { title: 'Card 2', cols: 1, rows: 1 },
-        { title: 'Card 3', cols: 1, rows: 2 },
-        { title: 'Card 4', cols: 1, rows: 1 }
-      ];
-    })
-  );
+  socialsColumSize = 1;
+  socialsRowSize = 1;
+
+  projectColumSize = 1;
+  projectRowSize = 2;
+
+  article1ColumSize = 2;
+  article1RowSize = 1;
+
+  article2ColumSize = 2;
+  article2RowSize = 1;
+
+  cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe()
+  .subscribe(
+    result => {
+     if (result) {
+        this.profileColumSize = 3;
+        this.profileRowSize = 1;
+
+        this.socialsColumSize = 3;
+        this.socialsRowSize = 1;
+
+        this.projectColumSize = 3;
+        this.projectRowSize = 1;
+
+        this.article1ColumSize = 3;
+        this.article1RowSize = 1;
+
+        this.article2ColumSize = 3;
+        this.article2RowSize = 1;
+      }
+    }
+    )
 
   constructor(private breakpointObserver: BreakpointObserver) {}
 }

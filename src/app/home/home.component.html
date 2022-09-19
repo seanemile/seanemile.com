@@ -1,6 +1,6 @@
 <div class="grid-container">
-  <mat-grid-list cols="3" rowHeight="300px">
-    <mat-grid-tile colspan="2" rowspan="2">
+
+   <div class="grid-container-profile">
       <mat-card class="dashboard-card">
         <mat-card-header>
             <div mat-card-avatar class="profile-header-image"></div>
@@ -11,11 +11,12 @@
           <p>
             I'm Sean, this is where I keep all of my thoughts and links to everything I do on the internet.
           </p>
-        </mat-card-content>
           <img mat-card-image src="../../assets/img/components/Bored3.webp" alt="Photo of a boared ape">
+        </mat-card-content>
       </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile colspan="1" rowspan="1">
+    </div>
+
+    <div class="grid-container-socials">
       <mat-card class="dashboard-card">
         <mat-card-header>
           <mat-card-title>Socials</mat-card-title>
@@ -41,25 +42,18 @@
             <span>&nbsp;&nbsp;Telegram</span>
           </a>
           <br>
-          <a mat-icon-button color="primary">
-            <img src="../../assets/img/components/ethereum.svg" alt="Ethereum Image">
-            <span>&nbsp;&nbsp;Ethereum</span>
+          <a mat-icon-button color="primary" href="mailto:@seanemile.se@gmail.com" target="_blank">
+            <img color="primary" src="../../assets/img/components/envelope-solid.svg" alt="Email Image">
+            <span>&nbsp;&nbsp;Gmail</span>
           </a>
         </mat-card-content>
       </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile colspan="1" rowspan="2">
+    </div>
+
+    <div class="grid-container-projects">
       <mat-card class="dashboard-card">
         <mat-card-header>
-          <mat-card-title>
-            Projects
-            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
-              <mat-icon>more_vert</mat-icon>
-            </button>
-            <mat-menu #menu="matMenu" xPosition="before">
-              <a routerLink="projects"><button mat-menu-item>Expand</button></a>
-            </mat-menu>
-          </mat-card-title>
+          <mat-card-title>Projects</mat-card-title>
         </mat-card-header>
         <mat-card-content class="dashboard-card-content">
           <a mat-icon-button color="primary" href="https://github.com/seanemile" target="_blank">
@@ -81,20 +75,20 @@
             <img src="../../assets/img/components/cow-solid.svg" alt="Github Image">
             <span>&nbsp;&nbsp;Seaport KnockOff</span>
           </a>
+          <br>
+          <a mat-icon-button color="primary" href="https://github.com/seanemile" target="_blank">
+            <img src="../../assets/img/components/flag-solid.svg" alt="Github Image">
+            <span>&nbsp;&nbsp;Ethereum Ctf</span>
+          </a>
         </mat-card-content>
       </mat-card>
-      </mat-grid-tile>
-    <mat-grid-tile colspan="2" rowspan="1">
+    </div>
+
+    <div class="grid-container-article1">
       <mat-card class="dashboard-card">
         <mat-card-header>
           <mat-card-title>
             Ethereum Gas Optimization Playbook
-            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
-              <mat-icon>more_vert</mat-icon>
-            </button>
-            <mat-menu #menu="matMenu" xPosition="before">
-              <a href="#" routerLink="socials" mat-menu-item> Expand</a>
-            </mat-menu>
           </mat-card-title>
             <div mat-card-avatar class="article1-header-image"></div>
             <mat-card-subtitle>A summary of 120 gas reports submited at <a>Code4rena</a></mat-card-subtitle>
@@ -104,27 +98,20 @@
           <div>Card Content Here</div>
         </mat-card-content>
       </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile colspan="2" rowspan="1">
+    </div>
+    <div class="grid-container-article2">
       <mat-card class="dashboard-card">
         <mat-card-header>
           <mat-card-title>
-            Gas Optimizing Bored apps
-            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
-              <mat-icon>more_vert</mat-icon>
-            </button>
-            <mat-menu #menu="matMenu" xPosition="before">
-              <a href="#" routerLink="socials" mat-menu-item> Expand</a>
-            </mat-menu>
+            Gas Optimizing Bored apess
           </mat-card-title>
             <div mat-card-avatar class="article1-header-image"></div>
-            <mat-card-subtitle></mat-card-subtitle>
+            <mat-card-subtitle>Gas opimizing bored apes smart contracts</mat-card-subtitle>
             <mat-card-subtitle><time datetime="2022-10-17">2022-10-17</time> </mat-card-subtitle>
         </mat-card-header>
         <mat-card-content class="dashboard-card-content">
           <div>Card Content Here</div>
         </mat-card-content>
       </mat-card>
-    </mat-grid-tile>
-  </mat-grid-list>
+  </div>
 </div>
