@@ -1,46 +1,76 @@
 <div class="grid-container">
-  <mat-grid-list cols="6" rowHeight="220">
-    <mat-grid-tile colspan="1" rowspan="1">
-      <a routerLink="home">
+  <mat-grid-list cols="4" rowHeight="220">
+    <mat-grid-tile [colspan]="profileColumSize" [rowspan]="profileRowSize">
+      <a href="https://github.com/seanemile" target="_blank" >
         <mat-card class="dashboard-card">
         <mat-card-title>
           Github
         </mat-card-title>
-        <mat-card-content>
-        <img mat-card-md-image src="../../assets/github.svg" alt="Github image">
+        <mat-card-content class="dashboard-card-content">
+        <img mat-card-md-image src="../../assets/img/components/github.svg" alt="Github image">
         </mat-card-content>
       </mat-card>
       </a>
     </mat-grid-tile>
-    <mat-grid-tile colspan="1" rowspan="1">
+    <mat-grid-tile [colspan]="profileColumSize" [rowspan]="profileRowSize">
+    <a href="https://discordapp.com/users/923146450462986292" target="_blank">
       <mat-card class="dashboard-card">
         <mat-card-title>
           Discord
         </mat-card-title>
-        <mat-card-content>
-        <img mat-card-md-image src="../../assets/discord.svg" alt="Discord image">
+        <mat-card-content class="dashboard-card-content">
+        <img mat-card-md-image src="../../assets/img/components/discord.svg" alt="Discord image">
         </mat-card-content>
       </mat-card>
+    </a>
     </mat-grid-tile>
-    <mat-grid-tile colspan="1" rowspan="1">
+    <mat-grid-tile [colspan]="profileColumSize" [rowspan]="profileRowSize">
+    <a href="https://t.me/seanemile" target="_blank">
       <mat-card class="dashboard-card">
         <mat-card-title>
           Telegram
         </mat-card-title>
-        <mat-card-content>
-        <img mat-card-md-image src="../../assets/telegram.svg" alt="Telegram image">
+        <mat-card-content class="dashboard-card-content">
+        <img mat-card-md-image src="../../assets/img/components/telegram.svg" alt="Telegram image">
         </mat-card-content>
       </mat-card>
+    </a>
     </mat-grid-tile>
-    <mat-grid-tile colspan="1" rowspan="1">
+    <mat-grid-tile [colspan]="profileColumSize" [rowspan]="profileRowSize">
+    <a mat-riple mat-ripple-button href="https://twitter.com/SeanEmile" target="_blank">
       <mat-card class="dashboard-card">
         <mat-card-title>
           Twitter
         </mat-card-title>
-        <mat-card-content>
-        <img mat-card-md-image src="../../assets/twitter.svg" alt="Twitter image">
+        <mat-card-content class="dashboard-card-content">
+        <img mat-card-md-image src="../../assets/img/components/twitter.svg" alt="Twitter image">
         </mat-card-content>
       </mat-card>
+    </a>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="profileColumSize" [rowspan]="profileRowSize">
+    <a href="mailto:@seanemile.se@gmail.com" target="_blank">
+      <mat-card class="dashboard-card">
+        <mat-card-title>
+          Gmail
+        </mat-card-title>
+        <mat-card-content class="dashboard-card-content">
+        <img mat-card-md-image src="../../assets/img/components/envelope-solid.svg" alt="Twitter image">
+        </mat-card-content>
+      </mat-card>
+    </a>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="profileColumSize" [rowspan]="profileRowSize">
+    <a>
+      <mat-card class="dashboard-card">
+        <mat-card-title>
+          Ethereum
+        </mat-card-title>
+        <mat-card-content class="dashboard-card-content">
+        <img mat-card-md-image src="../../assets/img/components/ethereum.svg" alt="Ethereum image">
+        </mat-card-content>
+      </mat-card>
+    </a>
     </mat-grid-tile>
   </mat-grid-list>
 </div>
