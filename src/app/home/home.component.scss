@@ -1,32 +1,51 @@
 .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: minmax(100px auto);
-  gap: 1em 1em;
-  margin: 1em;
-
+  margin: 20px;
 }
 
-.grid-container-profile{
-  grid-column: 1 / 4;
+.dashboard-card-profile {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 1px;
 }
 
-.grid-container-article1 {
-  grid-column: 1 / 4;
+.dashboard-card-socials {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
 }
 
-.grid-container-article2 {
-  grid-column: 1 / 4;
+.dashboard-card-projects {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+.dashboard-card-article1 {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
 }
 
-.grid-container-socials {
-  grid-column: 1 / 2;
+.dashboard-card-article2 {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 55px;
 }
 
-.grid-container-projects {
-  grid-column: 2 / 4;
+/*
+.dashboard-card-content {
+  text-align: center;
 }
-
+*/
 .article1-header-image {
   background-image: url('../../assets/img/components/c4-logo.svg');
   background-size: cover;
@@ -40,12 +59,4 @@
 .profile-header-image {
   background-image: url('../../assets/img/components/Profile.jpg');
   background-size: cover;
-}
-
-.dashboard-card-content {
-  text-align: left;
-}
-
-.dashboard-card-content {
-  text-align: left;
 }

@@ -1,32 +1,33 @@
 <div class="grid-container">
-
-   <div class="grid-container-profile">
-      <mat-card class="dashboard-card">
+  <mat-grid-list cols="4" rowHeight="340px"  >
+    <mat-grid-tile [rowspan]="profileRowSize" [colspan]="profileColumSize">
+      <mat-card class="dashboard-card-profile" >
         <mat-card-header>
             <div mat-card-avatar class="profile-header-image"></div>
             <mat-card-title>Sean A. Emile</mat-card-title>
             <mat-card-subtitle>Homo sapiens sapiens</mat-card-subtitle>
-          </mat-card-header>
+        </mat-card-header>
         <mat-card-content class="dashboard-card-content">
           <p>
             I'm Sean, this is where I keep all of my thoughts and links to everything I do on the internet.
           </p>
           <figure>
             <figcaption>Homo sapiens sapiens sapiens</figcaption>
-          <img mat-card-image src="../../assets/img/components/Bored3.webp" alt="Photo of a boared ape">
+            <img mat-card-image src="../../assets/img/components/Bored3.webp" alt="Photo of a boared ape">
           </figure>
         </mat-card-content>
       </mat-card>
-    </div>
-
-    <div class="grid-container-socials">
-      <mat-card class="dashboard-card">
+    </mat-grid-tile>
+    <mat-grid-tile [rowspan]="socialsRowSize" [colspan]="socialsColumSize">
+      <mat-card class="dashboard-card-socials">
         <mat-card-header>
           <mat-card-title>Socials</mat-card-title>
         </mat-card-header>
         <mat-card-content class="dashboard-card-content">
-          <a mat-icon-button color="primary" href="https://github.com/seanemile" target="_blank">
+          <a mat-icon-button mat-ripple mat-button-ripple href="https://github.com/seanemile" target="_blank">
+            <span mat-button-wrapper>
             <img src="../../assets/img/components/github.svg" alt="Github Image">
+            </span>
             <span>&nbsp;&nbsp;Github</span>
           </a>
           <br>
@@ -51,10 +52,9 @@
           </a>
         </mat-card-content>
       </mat-card>
-    </div>
-
-    <div class="grid-container-projects">
-      <mat-card class="dashboard-card">
+    </mat-grid-tile>
+    <mat-grid-tile [rowspan]="projectRowSize" [colspan]="projectColumSize">
+      <mat-card class="dashboard-card-projects">
         <mat-card-header>
           <mat-card-title>Projects</mat-card-title>
         </mat-card-header>
@@ -85,10 +85,9 @@
           </a>
         </mat-card-content>
       </mat-card>
-    </div>
-
-    <div class="grid-container-article1">
-      <mat-card class="dashboard-card">
+    </mat-grid-tile>
+    <mat-grid-tile [rowspan]="article1RowSize" [colspan]="article1ColumSize">
+      <mat-card class="dashboard-card-article1">
         <mat-card-header>
           <mat-card-title>
             Ethereum Gas Optimization Playbook
@@ -101,9 +100,9 @@
           <div>Card Content Here</div>
         </mat-card-content>
       </mat-card>
-    </div>
-    <div class="grid-container-article2">
-      <mat-card class="dashboard-card">
+    </mat-grid-tile>
+    <mat-grid-tile [rowspan]="article2RowSize" [colspan]="article2ColumSize">
+      <mat-card class="dashboard-card-article2">
         <mat-card-header>
           <mat-card-title>
             Gas Optimizing Bored apess
@@ -116,5 +115,6 @@
           <div>Card Content Here</div>
         </mat-card-content>
       </mat-card>
-  </div>
+    </mat-grid-tile>
+  </mat-grid-list>
 </div>
