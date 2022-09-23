@@ -5,7 +5,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Project Components
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ArticlesComponent } from './articles/articles.component';
 import { NavigationsComponent } from './navigations/navigations.component';
 import { HomeComponent } from './home/home.component';
 import { SocialsComponent } from './socials/socials.component';
@@ -16,11 +15,11 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAnalytics,getAnalytics,ScreenTrackingService} from '@angular/fire/analytics';
 import { MaterialModule } from './shared/material.module';
+import { ArticlesModule } from './articles/articles.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ArticlesComponent,
     NavigationsComponent,
     HomeComponent,
     SocialsComponent,
@@ -30,6 +29,7 @@ import { MaterialModule } from './shared/material.module';
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
+    ArticlesModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAnalytics(() => getAnalytics()),
     BrowserAnimationsModule,

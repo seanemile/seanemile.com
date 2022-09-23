@@ -1,6 +1,5 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ArticlesComponent } from './articles/articles.component';
 import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SocialsComponent } from './socials/socials.component';
@@ -8,7 +7,6 @@ import { SocialsComponent } from './socials/socials.component';
 const routes: Routes = [
       { path: 'home', component: HomeComponent},
       { path: 'socials', component: SocialsComponent},
-      { path: 'articles', component: ArticlesComponent},
       { path: 'projects', component: ProjectsComponent},
       { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: '**', redirectTo: 'home', pathMatch: 'full' }
