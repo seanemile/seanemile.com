@@ -27,9 +27,9 @@ import { ArticlesModule } from './articles/articles.module';
   ],
   imports: [
     BrowserModule,
+    ArticlesModule,
     AppRoutingModule,
     MaterialModule,
-    ArticlesModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAnalytics(() => getAnalytics()),
     BrowserAnimationsModule,

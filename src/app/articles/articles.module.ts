@@ -4,11 +4,13 @@ import { CommonModule } from '@angular/common';
 import { ArticlesRoutingModule } from './articles-routing.module';
 import { ArticleHomeComponent } from './article-home/article-home.component';
 import { MaterialModule } from '../shared/material.module';
+import { Article1Component } from './article1/article1.component';
 
 
 @NgModule({
   declarations: [
-    ArticleHomeComponent
+    ArticleHomeComponent,
+    Article1Component
   ],
   imports: [
     CommonModule,
