@@ -4,12 +4,12 @@ import {Subject} from 'rxjs';
 import {takeUntil} from 'rxjs/operators';
 
 @Component({
-  selector: 'app-articles',
-  templateUrl: './articles.component.html',
-  styleUrls: ['./articles.component.scss']
+  selector: 'app-article-home',
+  templateUrl: './article-home.component.html',
+  styleUrls: ['./article-home.component.scss']
 })
-export class ArticlesComponent implements OnDestroy {
-  /** Based on the screen size, switch from standard to one column per row */
+export class ArticleHomeComponent implements OnDestroy{
+
   destroyed = new Subject<void>();
 
   profileColumSize = 4;
@@ -66,4 +66,5 @@ export class ArticlesComponent implements OnDestroy {
     this.destroyed.next();
     this.destroyed.complete();
   }
+
 }
