@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 // Project Components
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavigationsComponent } from './navigations/navigations.component';
 import { HomeComponent } from './home/home.component';
 import { MaterialModule } from './shared/material.module';
 
@@ -19,7 +19,7 @@ import {
 } from '@angular/fire/analytics';
 
 @NgModule({
-  declarations: [AppComponent, NavigationsComponent, HomeComponent],
+  declarations: [AppComponent, HomeComponent, ToolbarComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
