@@ -2,50 +2,18 @@
   margin: 20px;
 }
 
-.dashboard-card-profile {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 1px;
+app-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
-.dashboard-card-socials {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
+mat-card {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
 }
 
-.dashboard-card-projects {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
-}
-.dashboard-card-article1 {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
-}
-
-.dashboard-card-article2 {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 55px;
-}
-
-/*
-.dashboard-card-content {
-  text-align: center;
-}
-*/
 .article1-header-image {
   background-image: url('../../assets/img/components/c4-logo.svg');
   background-size: cover;
