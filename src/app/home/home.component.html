@@ -1,120 +1,159 @@
-<div class="grid-container">
-  <mat-grid-list cols="4" rowHeight="340px"  >
-    <mat-grid-tile [rowspan]="profileRowSize" [colspan]="profileColumSize">
-      <mat-card class="dashboard-card-profile" >
-        <mat-card-header>
-            <div mat-card-avatar class="profile-header-image"></div>
-            <mat-card-title>Sean A. Emile</mat-card-title>
-            <mat-card-subtitle>Homo sapiens sapiens</mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-content class="dashboard-card-content">
-          <p>
-            I'm Sean, this is where I keep all of my thoughts and links to everything I do on the internet.
-          </p>
-          <figure>
-            <figcaption>Homo sapiens sapiens sapiens</figcaption>
-            <img mat-card-image src="../../assets/img/components/Bored3.webp" alt="Photo of a boared ape">
-          </figure>
-        </mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile [rowspan]="socialsRowSize" [colspan]="socialsColumSize">
-      <mat-card class="dashboard-card-socials">
-        <mat-card-header>
-          <mat-card-title>Socials</mat-card-title>
-        </mat-card-header>
-        <mat-card-content class="dashboard-card-content">
-          <a mat-icon-button mat-ripple mat-button-ripple href="https://github.com/seanemile" target="_blank">
-            <span mat-button-wrapper>
-            <img src="../../assets/img/components/github.svg" alt="Github Image">
-            </span>
-            <span>&nbsp;&nbsp;Github</span>
-          </a>
-          <br>
-          <a mat-icon-button href="https://twitter.com/SeanEmile" target="_blank">
-            <img src="../../assets/img/components/twitter.svg" alt="Twitter Image">
-            <span>&nbsp;&nbsp;Twitter</span>
-          </a>
-          <br>
-          <a mat-icon-button href="https://discordapp.com/users/923146450462986292" target="_blank">
-            <img src="../../assets/img/components/discord.svg" alt="Discord Image">
-            <span>&nbsp;&nbsp;Discord</span>
-          </a>
-          <br>
-          <a mat-icon-button href="https://t.me/seanemile" target="_blank">
-            <img color="primary" src="../../assets/img/components/telegram.svg" alt="Telegram Image">
-            <span>&nbsp;&nbsp;Telegram</span>
-          </a>
-          <br>
-          <a mat-icon-button href="mailto:@seanemile.se@gmail.com" target="_blank">
-            <img color="primary" src="../../assets/img/components/envelope-solid.svg" alt="Email Image">
-            <span>&nbsp;&nbsp;Gmail</span>
-          </a>
-        </mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile [rowspan]="projectRowSize" [colspan]="projectColumSize">
-      <mat-card class="dashboard-card-projects">
-        <mat-card-header>
-          <mat-card-title>Projects</mat-card-title>
-        </mat-card-header>
-        <mat-card-content class="dashboard-card-content">
-          <a mat-icon-button href="https://afrikanas.web.app" target="_blank">
-            <img src="../../assets/img/components/otter-solid.svg" alt="Uniswap KnockOff Image">
-            <span>&nbsp;&nbsp;Uniswap KnockOff</span>
-          </a>
-          <br>
-          <a mat-icon-button href="https://afrikanas.web.app" target="_blank">
-            <img src="../../assets/img/components/hippo-solid.svg" alt="Compound KnockOff Image">
-            <span>&nbsp;&nbsp;Compound KnockOff</span>
-          </a>
-          <br>
-          <a mat-icon-button href="https://afrikanas.web.app" target="_blank">
-            <img src="../../assets/img/components/feather-solid.svg" alt="CrypoPunks KnockOff Image">
-            <span>&nbsp;&nbsp;CryptoPunks KnockOff</span>
-          </a>
-          <br>
-          <a mat-icon-button href="https://afrikanas.web.app" target="_blank">
-            <img src="../../assets/img/components/cow-solid.svg" alt="Seaport KnockOff Image">
-            <span>&nbsp;&nbsp;Seaport KnockOff</span>
-          </a>
-          <br>
-          <a mat-icon-button href="https://afrikanas.web.app" target="_blank">
-            <img src="../../assets/img/components/flag-solid.svg" alt="Ethereum Ctf Image">
-            <span>&nbsp;&nbsp;Ethereum Ctf</span>
-          </a>
-        </mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile [rowspan]="article1RowSize" [colspan]="article1ColumSize">
-      <mat-card class="dashboard-card-article1">
-        <mat-card-header>
-          <mat-card-title>
-            Ethereum Gas Optimization Playbook
-          </mat-card-title>
-            <div mat-card-avatar class="article1-header-image"></div>
-            <mat-card-subtitle>A summary of 120 gas reports submited at <a>Code4rena</a></mat-card-subtitle>
-            <mat-card-subtitle><time datetime="2022-10-17">2022-10-17</time> </mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-content class="dashboard-card-content">
-          <div>Card Content Here</div>
-        </mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile [rowspan]="article2RowSize" [colspan]="article2ColumSize">
-      <mat-card class="dashboard-card-article2">
-        <mat-card-header>
-          <mat-card-title>
-            Gas Optimizing Bored apess
-          </mat-card-title>
-            <div mat-card-avatar class="article1-header-image"></div>
-            <mat-card-subtitle>Gas opimizing bored apes smart contracts</mat-card-subtitle>
-            <mat-card-subtitle><time datetime="2022-10-17">2022-10-17</time> </mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-content class="dashboard-card-content">
-          <div>Card Content Here</div>
-        </mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
-  </mat-grid-list>
-</div>
+<ng-container>
+  <mat-card class="dashboard-card-profile">
+    <mat-card-header>
+      <div mat-card-avatar class="profile-header-image"></div>
+      <mat-card-title>Sean A. Emile</mat-card-title>
+      <mat-card-subtitle>Homo sapiens sapiens</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content class="dashboard-card-content">
+      <img
+        mat-card-image
+        src="../../assets/img/components/Bored3.webp"
+        alt="Photo of a boared ape"
+      />
+      <p>
+        I'm Sean, this is where I keep all of my thoughts and links to
+        everything I do on the internet.
+      </p>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="dashboard-card-socials">
+    <mat-card-header>
+      <mat-card-title>Socials</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="dashboard-card-content">
+      <a
+        mat-icon-button
+        mat-ripple
+        mat-button-ripple
+        href="https://github.com/seanemile"
+        target="_blank"
+      >
+        <span mat-button-wrapper>
+          <img
+            src="../../assets/img/components/github.svg"
+            alt="Github Image"
+          />
+        </span>
+        <span>&nbsp;&nbsp;Github</span>
+      </a>
+      <br />
+      <a mat-icon-button href="https://twitter.com/SeanEmile" target="_blank">
+        <img
+          src="../../assets/img/components/twitter.svg"
+          alt="Twitter Image"
+        />
+        <span>&nbsp;&nbsp;Twitter</span>
+      </a>
+      <br />
+      <a
+        mat-icon-button
+        href="https://discordapp.com/users/923146450462986292"
+        target="_blank"
+      >
+        <img
+          src="../../assets/img/components/discord.svg"
+          alt="Discord Image"
+        />
+        <span>&nbsp;&nbsp;Discord</span>
+      </a>
+      <br />
+      <a mat-icon-button href="https://t.me/seanemile" target="_blank">
+        <img
+          color="primary"
+          src="../../assets/img/components/telegram.svg"
+          alt="Telegram Image"
+        />
+        <span>&nbsp;&nbsp;Telegram</span>
+      </a>
+      <br />
+      <a mat-icon-button href="mailto:@seanemile.se@gmail.com" target="_blank">
+        <img
+          color="primary"
+          src="../../assets/img/components/envelope-solid.svg"
+          alt="Email Image"
+        />
+        <span>&nbsp;&nbsp;Gmail</span>
+      </a>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="dashboard-card-projects">
+    <mat-card-header>
+      <mat-card-title>Projects</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="dashboard-card-content">
+      <a mat-icon-button href="https://afrikanas.web.app" target="_blank">
+        <img
+          src="../../assets/img/components/otter-solid.svg"
+          alt="Uniswap KnockOff Image"
+        />
+        <span>&nbsp;&nbsp;Uniswap KnockOff</span>
+      </a>
+      <br />
+      <a mat-icon-button href="https://afrikanas.web.app" target="_blank">
+        <img
+          src="../../assets/img/components/hippo-solid.svg"
+          alt="Compound KnockOff Image"
+        />
+        <span>&nbsp;&nbsp;Compound KnockOff</span>
+      </a>
+      <br />
+      <a mat-icon-button href="https://afrikanas.web.app" target="_blank">
+        <img
+          src="../../assets/img/components/feather-solid.svg"
+          alt="CrypoPunks KnockOff Image"
+        />
+        <span>&nbsp;&nbsp;CryptoPunks KnockOff</span>
+      </a>
+      <br />
+      <a mat-icon-button href="https://afrikanas.web.app" target="_blank">
+        <img
+          src="../../assets/img/components/cow-solid.svg"
+          alt="Seaport KnockOff Image"
+        />
+        <span>&nbsp;&nbsp;Seaport KnockOff</span>
+      </a>
+      <br />
+      <a mat-icon-button href="https://afrikanas.web.app" target="_blank">
+        <img
+          src="../../assets/img/components/flag-solid.svg"
+          alt="Ethereum Ctf Image"
+        />
+        <span>&nbsp;&nbsp;Ethereum Ctf</span>
+      </a>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="dashboard-card-article1">
+    <mat-card-header>
+      <mat-card-title> Ethereum Gas Optimization Playbook </mat-card-title>
+      <div mat-card-avatar class="article1-header-image"></div>
+      <mat-card-subtitle
+        >A summary of 120 gas reports submited at
+        <a>Code4rena</a></mat-card-subtitle
+      >
+      <mat-card-subtitle
+        ><time datetime="2022-10-17">2022-10-17</time>
+      </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content class="dashboard-card-content">
+      <div>Card Content Here</div>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="dashboard-card-article2">
+    <mat-card-header>
+      <mat-card-title> Gas Optimizing Bored apess </mat-card-title>
+      <div mat-card-avatar class="article1-header-image"></div>
+      <mat-card-subtitle
+        >Gas opimizing bored apes smart contracts</mat-card-subtitle
+      >
+      <mat-card-subtitle
+        ><time datetime="2022-10-17">2022-10-17</time>
+      </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content class="dashboard-card-content">
+      <div>Card Content Here</div>
+    </mat-card-content>
+  </mat-card>
+</ng-container>
