@@ -1,7 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @use "@angular/material" as mat;
 
-@include mat.core();
+// TODO(v15): As of v15 mat.legacy-core no longer includes default typography styles.
+//  The following line adds:
+//    1. Default typography styles for all components
+//    2. Styles for typography hierarchy classes (e.g. .mat-headline-1)
+//  If you specify typography styles for the components you use elsewhere, you should delete this line.
+//  If you don't need the default component typographies but still want the hierarchy styles,
+//  you can delete this line and instead use:
+//    `@include mat.legacy-typography-hierarchy(mat.define-legacy-typography-config());`
+@include mat.all-legacy-component-typographies();
+@include mat.legacy-core();
 @include mat.strong-focus-indicators();
 
 // Define a light theme
@@ -35,7 +44,7 @@ $dark-theme: mat.define-dark-theme(
 );
 
 // Apply the dark theme by default
-@include mat.all-component-themes($light-theme);
+@include mat.all-legacy-component-themes($light-theme);
 
 // Apply strong focus indicator by default
 @include mat.strong-focus-indicators-theme($light-theme);
@@ -44,7 +53,7 @@ $dark-theme: mat.define-dark-theme(
 // to an ancestor element of the components (such as `body`).
 .dark-theme {
   // This mixin only generates the color styles now.
-  @include mat.all-component-colors($dark-theme);
+  @include mat.all-legacy-component-colors($dark-theme);
 
   // Apply strong focus indicator
   @include mat.strong-focus-indicators-color($dark-theme);
