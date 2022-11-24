@@ -39,18 +39,6 @@ $dark-theme: mat.define-dark-theme(
   )
 );
 
-// Emit theme-dependent styles for common features used across multiple components.
-// Apply light theme by default
-@include mat.core-theme($light-theme);
-@include mat.all-component-themes($light-theme);
-@include mat.strong-focus-indicators-theme($light-theme);
-// Apply dark theme if the user prefers it
-@media (prefers-color-scheme: dark) {
-  // use the '-color' mixin to only apply color styles without reapplying the typography styles
-  @include mat.core-color($dark-theme);
-  @include mat.all-component-colors($dark-theme);
-  @include mat.strong-focus-indicators-color($dark-theme);
-}
 
 html,
 body {
@@ -60,4 +48,20 @@ body {
   box-sizing: border-box;
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.light-theme {
+// Emit theme-dependent styles for common features used across multiple components.
+// Apply light theme by default
+@include mat.core-theme($light-theme);
+@include mat.all-component-themes($light-theme);
+@include mat.strong-focus-indicators-theme($light-theme);
+}
+
+.dark-theme {
+// Apply dark theme if the user prefers it
+  // use the '-color' mixin to only apply color styles without reapplying the typography styles
+  @include mat.core-color($dark-theme);
+  @include mat.all-component-colors($dark-theme);
+  @include mat.strong-focus-indicators-color($dark-theme);
 }
