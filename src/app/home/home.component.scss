@@ -1,7 +1,3 @@
-.grid-container {
-  margin: 20px;
-}
-
 app-toolbar {
   position: sticky;
   top: 0;
@@ -12,4 +8,10 @@ app-toolbar {
 mat-card {
   margin: 20px;
   padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
+  grid-gap: 20px;
 }
