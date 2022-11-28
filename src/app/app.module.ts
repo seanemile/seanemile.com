@@ -19,10 +19,12 @@ import {
 } from '@angular/fire/analytics';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ArticlesModule } from './articles/articles.module';
+import { CtfModule } from './ctf/ctf.module';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, NavigationComponent],
   imports: [
+    CtfModule,
     ArticlesModule,
     AppRoutingModule,
     BrowserModule,
