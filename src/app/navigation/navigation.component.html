@@ -23,7 +23,11 @@
     [opened]="(isHandset$ | async) === false"
   >
     <mat-nav-list>
-      <a mat-list-item href="#" routerLink="articles">Articles</a>
+      <a mat-list-item href="#" routerLink="home">
+        <mat-icon matListItemIcon color="primary">home</mat-icon>
+        <span color="primary">Home</span>
+      </a>
+      <a mat-list-item href="#" routerLink="articles">Ethereum Articles</a>
       <a mat-list-item href="#" routerLink="ctfs">Ethereum <abbr>CTF</abbr>s</a>
     </mat-nav-list>
   </mat-sidenav>
