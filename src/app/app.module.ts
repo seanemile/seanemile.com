@@ -18,10 +18,12 @@ import {
   ScreenTrackingService,
 } from '@angular/fire/analytics';
 import { NavigationComponent } from './navigation/navigation.component';
+import { ArticlesModule } from './articles/articles.module';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, NavigationComponent],
   imports: [
+    ArticlesModule,
     AppRoutingModule,
     BrowserModule,
     MaterialModule,
