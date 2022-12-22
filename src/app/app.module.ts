@@ -20,9 +20,15 @@ import {
 import { NavigationComponent } from './navigation/navigation.component';
 import { ArticlesModule } from './articles/articles.module';
 import { CtfModule } from './ctf/ctf.module';
+import { ContactsComponent } from './contacts/contacts.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, NavigationComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    NavigationComponent,
+    ContactsComponent,
+  ],
   imports: [
     CtfModule,
     ArticlesModule,
