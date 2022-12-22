@@ -6,12 +6,57 @@ app-toolbar {
 
 /* TODO(mdc-migration): The following rule targets internal classes of card that may no longer apply for the MDC version. */
 mat-card {
-  margin: 20px;
-  padding: 20px;
+  margin: 15px;
 }
 
 .grid-container {
+  margin-bottom: 90px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
-  grid-gap: 20px;
+  grid-template-areas:
+    'profile'
+    'socials'
+    'projects'
+    'article1';
+}
+
+@media (min-width: 426px) {
+  .grid-container {
+    grid-template-areas:
+      'profile profile'
+      'socials projects'
+      'socials article1';
+  }
+  /* … */
+}
+
+@media (min-width: 769px) {
+  .grid-container {
+    grid-template-areas:
+      'profile profile socials'
+      'profile profile socials'
+      'projects projects projects'
+      'article1 article1 article1';
+  }
+  /* … */
+}
+.profile {
+  grid-area: profile;
+}
+
+.socials {
+  grid-area: socials;
+}
+
+.projects {
+  grid-area: projects;
+}
+
+.article1 {
+  grid-area: article1;
+}
+
+.bored-ape {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
 }
