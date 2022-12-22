@@ -14,17 +14,15 @@ mat-card {
   display: grid;
   grid-template-areas:
     'profile'
-    'socials'
+    'contacts'
     'projects'
-    'article1';
 }
 
 @media (min-width: 426px) {
   .grid-container {
     grid-template-areas:
       'profile profile'
-      'socials projects'
-      'socials article1';
+      'contacts projects'
   }
   /* … */
 }
@@ -32,10 +30,8 @@ mat-card {
 @media (min-width: 769px) {
   .grid-container {
     grid-template-areas:
-      'profile profile socials'
-      'profile profile socials'
-      'projects projects projects'
-      'article1 article1 article1';
+      'profile profile contacts'
+      'profile profile projects'
   }
   /* … */
 }
@@ -43,17 +39,14 @@ mat-card {
   grid-area: profile;
 }
 
-.socials {
-  grid-area: socials;
+.contacts {
+  grid-area: contacts;
 }
 
 .projects {
   grid-area: projects;
 }
 
-.article1 {
-  grid-area: article1;
-}
 
 .bored-ape {
   width: 100%;
