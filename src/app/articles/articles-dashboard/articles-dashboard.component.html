@@ -1,25 +1,36 @@
 <div class="grid-item article1">
-  <mat-card class="article1Link" appearance="outlined">
-    <mat-card-header>
-      <mat-card-title> Ethereum Gas Optimization Playbook </mat-card-title>
+  <a href="#" routerLink="/article1">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title> Ethereum Gas Optimization Playbook </mat-card-title>
+        <img
+          mat-card-avatar
+          ngSrc="../../../assets/img/components/c4rena.png"
+          priority="true"
+          height="20"
+          width="20"
+          alt="Code4rena logo"
+        />
+        <mat-card-subtitle
+          >A summary of 120 gas reports submitted at
+          <a>Code4rena</a></mat-card-subtitle
+        >
+        <mat-card-subtitle
+          ><time datetime="2022-10-17">2022-10-17</time>
+        </mat-card-subtitle>
+      </mat-card-header>
       <img
-        mat-card-avatar
-        ngSrc="../../../assets/img/components/c4rena.png"
-        priority="true"
-        height="20"
-        width="20"
-        alt="Code4rena logo"
+        mat-card-image
+        class="articleImage"
+        ngSrc="../../../assets/img/components/gas.jpeg"
+        width="300"
+        height="170"
+        alt="Gas Optimization Image"
+        priority
       />
-      <mat-card-subtitle
-        >A summary of 120 gas reports submitted at
-        <a>Code4rena</a></mat-card-subtitle
-      >
-      <mat-card-subtitle
-        ><time datetime="2022-10-17">2022-10-17</time>
-      </mat-card-subtitle>
-    </mat-card-header>
-    <!-- <mat-card-content class="dashboard-card-content">
-          <div>Card Content Here</div>
-        </mat-card-content> -->
-  </mat-card>
+      <mat-card-content class="dashboard-card-content">
+        <div>Card Content Here</div>
+      </mat-card-content>
+    </mat-card>
+  </a>
 </div>

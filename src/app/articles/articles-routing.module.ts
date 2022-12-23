@@ -4,8 +4,8 @@ import { Article1Component } from './article1/article1.component';
 import { ArticlesDashboardComponent } from './articles-dashboard/articles-dashboard.component';
 
 const routes: Routes = [
-  { path: 'article1', component: Article1Component },
   { path: 'articles', component: ArticlesDashboardComponent },
+  { path: 'article1', component: Article1Component },
 ];
 @NgModule({
   imports: [RouterModule.forChild(routes)],
