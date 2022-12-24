@@ -18,6 +18,7 @@
     class="sidenav"
     fixedInViewport
     fixedTopGap="60"
+    fixedBottomGap="260"
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="(isHandset$ | async) === false"
