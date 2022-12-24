@@ -23,5 +23,60 @@
   <mat-divider></mat-divider>
   <!--Introduction -->
 
-  <mat-card-content class="dashboard-card-content"> </mat-card-content>
+  <mat-card-content class="dashboard-card-content">
+    <h1>Low Severity Issues</h1>
+    <mat-divider></mat-divider>
+    <!--L-O1 -->
+
+    <h2>L-O1 Return values of approve() not checked</h2>
+    <p>
+      Not all IERC20 implementations revert() when there's a failure in
+      approve(). The function signature has a boolean return value and they
+      indicate errors that way instead. By not checking the return value,
+      operations that should have marked as failed, may potentially go through
+      without actually approving anything
+    </p>
+
+    <mat-divider></mat-divider>
+    <!--L-O2 -->
+    <h2>L-02 Event is missing indexed fields</h2>
+    <p>
+      Index event fields make the field more quickly accessible to off-chain
+      tools that parse events. However, note that each index field costs extra
+      gas during emission, so it's not necessarily best to index the maximum
+      allowed per event (three fields). Each event should use three indexed
+      fields if there are three or more fields, and gas usage is not
+      particularly of concern for the events in question. If there are fewer
+      than three fields, all of the fields should be indexed.
+    </p>
+
+    <mat-divider></mat-divider>
+    <!--L-O3 -->
+
+    <h2>L-03 Constants should be defined rather than using magic numbers</h2>
+
+    <mat-divider></mat-divider>
+    <!--L-O4 -->
+
+    <h2>L-04 Functions not used internally could be marked external</h2>
+
+    <mat-divider></mat-divider>
+    <!--L-O5 -->
+    <h2>
+      L-05 abi.encodePacked() should not be used with dynamic types when passing
+      the result to a hash function such as keccak256()
+    </h2>
+    <p>
+      Use abi.encode() instead which will pad items to 32 bytes, which will
+      prevent hash collisions (e.g. abi.encodePacked(0x123,0x456) => 0x123456 =>
+      abi.encodePacked(0x1,0x23456), but abi.encode(0x123,0x456) =>
+      0x0...1230...456). "Unless there is a compelling reason, abi.encode should
+      be preferred". If there is only one argument to abi.encodePacked() it can
+      often be cast to bytes() or bytes32() instead. If all arguments are
+      strings and or bytes, bytes.concat() should be used instead
+    </p>
+    <mat-divider></mat-divider>
+    <!--L-O1 -->
+    <h2>Unsafe ERC20 operation(s) approve is susceptible to front running</h2>
+  </mat-card-content>
 </mat-card>
